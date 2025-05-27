@@ -5,13 +5,18 @@ from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework.routers import DefaultRouter
 import os
+from django.http import HttpResponse
 # from drf_chunked_upload import urls as chunked_upload_urls
 # from drf_chunked_upload.views import ChunkedUploadViewSet
 
 # router = DefaultRouter()
 # router.register(r'upload/chunked', ChunkedUploadViewSet, basename='chunkedupload')
 
+def home(request):
+    return HttpResponse("Welcome to the Django file upload app!")
+
 urlpatterns = [
+    path('', home),
     path('admin/', admin.site.urls),
     # path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     # path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
