@@ -10,7 +10,6 @@ env/
 venv/
 
 # Django
-*.sqlite3
 *.log
 media/
 staticfiles/
@@ -40,6 +39,5 @@ chunked_uploads"media/"
 __pycache__/
 .venv/
 *.log
-*.sqlite3
 
 chunked_uploads
