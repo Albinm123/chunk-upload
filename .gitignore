@@ -1,0 +1,45 @@
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+env/
+venv/
+
+# Django
+*.sqlite3
+*.log
+media/
+staticfiles/
+
+# IDEs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+
+# files
+uploader_client.py
+client.py
+
+# folders
+videos
+chunked_uploads"media/" 
+
+*.mp4
+*.avi
+*.mov
+__pycache__/
+.venv/
+*.log
+*.sqlite3
+
+chunked_uploads
